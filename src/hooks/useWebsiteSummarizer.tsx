@@ -7,8 +7,7 @@ export const useWebsiteSummarizer = () => {
   const [isLoading, setIsLoading] = useState(false);
   
   // Check if hardcoded API key exists, otherwise use empty string
-  const hardcodedApiKey = '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';
-  const [apiKey, setApiKey] = useState(hardcodedApiKey);
+  const [apiKey, setApiKey] = useState('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');
   const [showApiKeyInput, setShowApiKeyInput] = useState(!hardcodedApiKey || hardcodedApiKey.trim() === '');
 
   const isValidUrl = (string: string) => {
