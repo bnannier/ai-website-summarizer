@@ -8,7 +8,7 @@ export const useWebsiteSummarizer = () => {
   const [isLoading, setIsLoading] = useState(false);
   
   // Remove invalid hardcoded API key - users need to provide their own
-  const [apiKey, setApiKey] = useState('');
+  const [apiKey, setApiKey] = useState('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');
   const [showApiKeyInput, setShowApiKeyInput] = useState(!apiKey || apiKey.trim() === '');
 
   const isValidUrl = (string: string) => {
