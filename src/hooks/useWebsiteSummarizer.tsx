@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { toast } from "@/hooks/use-toast";
 
@@ -6,8 +5,8 @@ export const useWebsiteSummarizer = () => {
   const [url, setUrl] = useState('');
   const [summary, setSummary] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [apiKey, setApiKey] = useState('');
-  const [showApiKeyInput, setShowApiKeyInput] = useState(true);
+  const [apiKey, setApiKey] = useState('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');
+  const [showApiKeyInput, setShowApiKeyInput] = useState(!apiKey || apiKey.trim() === '');
 
   const isValidUrl = (string: string) => {
     try {
