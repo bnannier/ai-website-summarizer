@@ -1,6 +1,6 @@
 AI Website Summarizer
 
-For this project to work, we require an API Key from OpenAI.
+For this project to work, we require an API Key from OpenAI.  
 https://platform.openai.com/settings/organization/api-keys
 
 In the following file (src\hooks\useWebsiteSummarizer.tsx) 
