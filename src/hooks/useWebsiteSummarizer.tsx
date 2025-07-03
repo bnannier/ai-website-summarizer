@@ -6,14 +6,10 @@ export const useWebsiteSummarizer = () => {
   const [summary, setSummary] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   
-  // No hardcoded API key - users must provide their own
-  const [apiKey, setApiKey] = useState('');
-  const [showApiKeyInput, setShowApiKeyInput] = useState(true);
-
   // Check if hardcoded API key exists, otherwise use empty string
-  // const hardcodedApiKey = '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';
-  // const [apiKey, setApiKey] = useState(hardcodedApiKey);
-  // const [showApiKeyInput, setShowApiKeyInput] = useState(!hardcodedApiKey || hardcodedApiKey.trim() === '');
+  const hardcodedApiKey = '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';
+  const [apiKey, setApiKey] = useState(hardcodedApiKey);
+  const [showApiKeyInput, setShowApiKeyInput] = useState(!hardcodedApiKey || hardcodedApiKey.trim() === '');
 
   const isValidUrl = (string: string) => {
     try {
